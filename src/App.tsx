@@ -154,7 +154,7 @@ export default function App() {
   const [periodicData, setPeriodicData] = useState<Record<string, any>>({});
   const [communeData, setCommuneData] = useState<Record<string, any>>({});
 
-  // Dữ liệu xã Phú An từ Firestore (thay thế COMMUNE_DATA['X. Phú An'])
+  // Dữ liệu Phú An từ Firestore (thay thế COMMUNE_DATA['X. Phú An'])
   const currentZoneData = useMemo(() => {
     return communeData['X. Phú An'] || EMPTY_COMMUNE_ENTRY;
   }, [communeData]);
